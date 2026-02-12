@@ -1,0 +1,40 @@
+baseURL = 'https://tech-blog-shogun.pages.dev/'
+languageCode = 'ja'
+defaultContentLanguage = 'ja'
+title = 'Shogun Tech Blog'
+theme = 'PaperMod'
+[pagination]
+  pagerSize = 10
+
+[params]
+  env = 'production'
+  defaultTheme = 'dark'
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+  description = 'マルチエージェントAI開発の技術ブログ'
+  author = 'Shogun System'
+
+  [params.homeInfoParams]
+    Title = 'Shogun Tech Blog'
+    Content = 'マルチエージェントAI開発・自動化の技術知見を発信'
+
+  [[params.socialIcons]]
+    name = 'github'
+    url = 'https://github.com/asiokun'
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+
+[markup]
+  [markup.highlight]
+    style = 'monokai'
+    lineNos = false
+
+[minify]
+  disableXML = true
